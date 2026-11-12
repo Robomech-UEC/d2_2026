@@ -1,0 +1,8 @@
+node_modules/
+dist/
+client/dist/
+save/
+backups/
+.tools/
+test-results/
+*.tsbuildinfo

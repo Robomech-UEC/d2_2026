@@ -1,0 +1,48 @@
+{
+  "name": "d2-scoreboard-2026",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc -p client/tsconfig.json && tsc -p tsconfig.server.json --noEmit",
+    "build": "node scripts/build.mjs",
+    "start": "node dist/server/src/main.js",
+    "dev": "node scripts/dev.mjs",
+    "test": "tsc -p tsconfig.server.json && node scripts/test.mjs",
+    "test:browser": "node tests/browser.mjs && node tests/planning.browser.mjs",
+    "lint": "eslint client/src shared server/src tests --ext .ts,.tsx --max-warnings 0"
+  },
+  "dependencies": {
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@mui/icons-material": "5.11.16",
+    "@mui/material": "5.13.5",
+    "@reduxjs/toolkit": "1.9.5",
+    "dseg": "0.46.0",
+    "express": "4.19.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "8.1.0",
+    "react-router-dom": "6.13.0",
+    "ws": "8.18.0",
+    "zod": "3.21.4"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.21",
+    "@types/node": "20.3.1",
+    "@types/react": "18.0.37",
+    "@types/react-dom": "18.0.11",
+    "@types/ws": "8.5.12",
+    "@typescript-eslint/eslint-plugin": "5.59.0",
+    "@typescript-eslint/parser": "5.59.0",
+    "@vitejs/plugin-react-swc": "3.0.0",
+    "eslint": "8.38.0",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "playwright": "1.62.1",
+    "typescript": "5.0.2",
+    "vite": "4.3.9"
+  }
+}
